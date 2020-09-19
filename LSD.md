@@ -33,32 +33,63 @@
 
 ## Curriculum
 
-### **knows Issues related to the development of distributed and large-scale IT systems, and how disciplined and agile development methods prescribe how these issues should be handled**
+### _is able to start an virtual machine with Vagrant_ (1)
 
-### **knows The advantages, disadvantages and costs of using a system for the continuous integration and delivery of IT systems**
+x
 
-### **knows Configuration and error reporting systems dedicated to the development of large distributed systems**
+### _is able to launch a Docker container_ (1)
 
-### **knows Quality criteria for the design of interfaces to subsystems**
+x
 
-### is able to start an virtual machine with Vagrant
+### _is able to launch and run a Java program in IntelliJ_ (1)
 
-### is able to launch a Docker container
+x
 
-### is able to launch and run a Java program in IntelliJ
+### is able to Apply techniques for dividing a system into subsystems (1)
 
-### **is able to Apply techniques for dividing a system into subsystems**
+- **Component** Reusable encapsulated well defined software. Cannot stand alone.
+- **Subsystem** Encapsulated well defined stand-alone software. Might or might not be an application by itself.
+- **Application** An end-usable piece of software.
 
-### **is able to Use a system for continuous integration and delivery**
+Strategies for dividing systems
 
-### **is able to Use version control systems dedicated to the development of large distributed systems in a distributed development team**
+- Layered/functional sub-systems (High Cohesion)
+  - Fit to competences between developers
+  - Fit to distributions on machines
+- Use-case based sub-systemer (Low coupling – primary on data level)
+  - Fits requirements owner (users)
+- Mixed or balanced division
+  - Front ends – use-cases - presentation logic
+  - Back end - technology - business logic
 
-### **is able to Design and specify requirements for subsystems**
+### is able to Design and specify requirements for subsystems (2,3,4,14)
 
-### **is able to Use architecture patterns dedicated to the development of large distributed systems**
+thoughts:
+- Problem = "big system/application"
+- divide problem using UML
+- for each problem make a fully dressed use case
+- Wheen use cases are fully dressed, you may begin to think about them in terms of software, create high cohesion low coupling solutions, make sure you use interfaces to ensure testable code and the previously mentioned low coupling hehe 
 
-### **have the skills to Participate in globally distributed development**
+### is able to Use architecture patterns dedicated to the development of large distributed systems (2,3,4,14)
 
-### **have the skills to Cooperate in large systems development organizations**
+- Revisit later, but it seems to be just archi patterns such as: [ref](https://towardsdatascience.com/10-common-software-architectural-patterns-in-a-nutshell-a0b47a1e9013)
 
-### **have the skills to Adapt development methods and processes to the development of large distributed systems**
+### have the skills to Cooperate in large systems development organizations (2,3,4,8,10)
+
+Netto thinks i am great
+
+### knows Quality criteria for the design of interfaces to subsystems (4,5,7,8,10,13)
+
+### is able to Use version control systems dedicated to the development of large distributed systems in a distributed development team (4,12)
+
+### knows Issues related to the development of distributed and large-scale IT systems, and how disciplined and agile development methods prescribe how these issues should be handled (6)
+
+### knows The advantages, disadvantages and costs of using a system for the continuous integration and delivery of IT systems (6)
+
+### is able to Use a system for continuous integration and delivery (6)
+
+### have the skills to Participate in globally distributed development (8)
+
+### knows Configuration and error reporting systems dedicated to the development of large distributed systems (9)
+
+### have the skills to Adapt development methods and processes to the development of large distributed systems (11)

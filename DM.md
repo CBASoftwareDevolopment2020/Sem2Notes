@@ -5,13 +5,13 @@
 |        Week        | Topic                   | Subject                                                                               |
 | :----------------: | ----------------------- | ------------------------------------------------------------------------------------- |
 | [36](DM/Week36.md) | Basics                  | [01 Introduction and Logic](https://datsoftlyngby.github.io/soft2020fall/DM/week-36/) |
-|       [37]()       | Basics                  | [02 Predicates](https://datsoftlyngby.github.io/soft2020fall/DM/week-37/)             |
-|       [38]()       | Basics                  | [03 Set Theory](https://datsoftlyngby.github.io/soft2020fall/DM/week-38/)             |
-|       [40]()       | Sequences and Languages | [04 Sequences]()                                                                      |
-|       [41]()       | Sequences and Languages | [05 Regular Languages and Finite State Automata]()                                    |
-|       [43]()       | Static Analysis         | [06 Relations]()                                                                      |
-|       [44]()       | Static Analysis         | [07 Static Analysis]()                                                                |
-|       [45]()       | Static Analysis         | [08 Static Analysis Cont. and recap]()                                                |
+| [37](DM/Week37.md) | Basics                  | [02 Predicates](https://datsoftlyngby.github.io/soft2020fall/DM/week-37/)             |
+|         38         | Basics                  | [03 Set Theory](https://datsoftlyngby.github.io/soft2020fall/DM/week-38/)             |
+|         40         | Sequences and Languages | 04 Sequences                                                                          |
+|         41         | Sequences and Languages | 05 Regular Languages and Finite State Automata                                        |
+|         43         | Static Analysis         | 06 Relations                                                                          |
+|         44         | Static Analysis         | 07 Static Analysis                                                                    |
+|         45         | Static Analysis         | 08 Static Analysis Cont. and recap                                                    |
 
 ## Slides
 
@@ -26,15 +26,17 @@
 - [2 Programming with Predicates](https://datsoftlyngby.github.io/soft2020fall/resources/43ec6fda-02-assignment.pdf)
 - [3 Programming with sets](https://datsoftlyngby.github.io/soft2020fall/resources/2f52520c-03-assignment.pdf)
 - [4 Sequences and Recursion](https://datsoftlyngby.github.io/soft2020fall/resources/4ff38378-04-assignment.pdf)
-- [5 Analysing Log Data]()
-- [6a Static Analysis Data Structure]()
-- [6b Static Analysis Engine]()
+- 5 Analysing Log Data
+- 6a Static Analysis Data Structure
+- 6b Static Analysis Engine
 
 ## Curriculum
 
-### **knows logic and reasoning**
+### knows logic and reasoning (1)
 
-### knows laws of logical equivalence including de Morgan’s law
+x
+
+### _knows laws of logical equivalence including de Morgan’s law_ (1)
 
 | Law              |                                                                      Equivalence                                                                       |
 | ---------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------: |
@@ -48,23 +50,16 @@
 | De Morgan's      |                              &not;(a &and; b) &equiv; &not;a &or; &not;b <br> &not;(a &or; b) &equiv; &not;a &and; &not;b                              |
 | Absorbtion       |                                             a &or; (a &and; b) &equiv; a <br> a &and; (a &or; b) &equiv; a                                             |
 
-### **knows Predicates and Qualifiers**
+### is able to argue about the correctness of statements using Boolean algebra and truth tables (1)
 
-### knows laws of multi-qualified statements including De Morgan’s law
+|  a  |  b  |     |  c  | &not;(a &or; b) | &not;(b &rarr; a) | &not;a | &not;(a &rarr; b) | &not;b | &not;(a &harr; b) | &not;(a &and; b) | a &and; b | a &harr; b |  b  | a &rarr; b |  a  | b &rarr; a | a &or; b |  t  |
+| :-: | :-: | --- | :-: | :-------------: | :---------------: | :----: | :---------------: | :----: | :---------------: | :--------------: | :-------: | :--------: | :-: | :--------: | :-: | :--------: | :------: | :-: |
+|  0  |  0  |     |  0  |        1        |         0         |   1    |         0         |   1    |         0         |        1         |     0     |     1      |  0  |     1      |  0  |     1      |    0     |  1  |
+|  0  |  1  |     |  0  |        0        |         1         |   1    |         0         |   0    |         1         |        1         |     0     |     0      |  1  |     1      |  0  |     0      |    1     |  1  |
+|  1  |  0  |     |  0  |        0        |         0         |   0    |         1         |   1    |         1         |        1         |     0     |     0      |  0  |     0      |  1  |     1      |    1     |  1  |
+|  1  |  1  |     |  0  |        0        |         0         |   0    |         0         |   0    |         0         |        0         |     1     |     1      |  1  |     1      |  1  |     1      |    1     |  1  |
 
-### **knows Set notations and Set Theory**
-
-### **knows Sequences and induction**
-
-### **knows Regular expressions and Finite-State Automata**
-
-### **knows Relations**
-
-### **knows Static Analysis and Design by Contract**
-
-### **is able to argue about the correctness of statements using Boolean algebra and truth tables**
-
-### is able to explain sentences: negation (not), conjunction (and), and disjunction (or), tautologies and contradictions
+### _is able to explain sentences: negation (not), conjunction (and), and disjunction (or), tautologies and contradictions_ (1)
 
 |               |       |            |                                              |
 | ------------- | ----- | :--------: | -------------------------------------------- |
@@ -74,23 +69,24 @@
 | Tautology     | true  |   **t**    | always true                                  |
 | Contradiction | false |   **c**    | always false                                 |
 
-### is able to explain truth tables
+### _is able to explain truth tables_ (1)
 
-A truth table is a mathematical table used to determine if a compound statement is true or false. In a truth table, each statement is typically represented by a letter or variable, like p, q, or r, and each statement also has its own corresponding column in the truth table that lists all of the possible truth values
+A truth table is a boolean algebraic table used to determine if a compound statement is true or false. In a truth table, each statement is typically represented by a letter or variable, like p, q, or r, and each statement also has its own corresponding column in the truth table that lists all of the possible truth values.  
+Can be used to determine if they are logicaly equivalent.
 
-### is able to explain conditional statements, their contrapositive, converse, and inverse, hypothesis and conclusion
+### _is able to explain conditional statements, their contrapositive, converse, and inverse, hypothesis and conclusion_ (1)
 
-|                       |                                         |
-| --------------------- | :-------------------------------------: |
-| Hypothesis            |                    a                    |
-| Conclusion            |                    b                    |
-| Conditional statement |    a &rarr; b &equiv; &not;a &or; b     |
-| Contrapositive        | a &rarr; b &equiv; &not;b &rarr; &not;a |
-| Converse              |               b &rarr; a                |
-| Inverse               |          &not;a &rarr; &not;b           |
-| Biconditional         |      a &harr; b &equiv; b &harr; a      |
+|                       |                                         |                                                                           |
+| --------------------- | :-------------------------------------: | ------------------------------------------------------------------------- |
+| Hypothesis            |                    a                    | A hypothesis is the "if" part (antecedent) of a conditional statement     |
+| Conclusion            |                    b                    | The truth of the conclusion is conditioned to the truth of the hypothesis |
+| Conditional statement |    a &rarr; b &equiv; &not;a &or; b     | False if hypothesis is true and conclusion is false, true otherwise       |
+| Contrapositive        | a &rarr; b &equiv; &not;b &rarr; &not;a | If a implies b then not b implies not a                                   |
+| Converse              |               b &rarr; a                | The conclusion implies the hypothesis                                     |
+| Inverse               |          &not;a &rarr; &not;b           | The contrapositive of the converse                                        |
+| Biconditional         |      a &harr; b &equiv; b &harr; a      | A conditional statement that goes both ways                               |
 
-### is able to explain arguments, modus ponens and modus tollens
+### _is able to explain arguments, modus ponens and modus tollens_ (1)
 
 An argument is a sequence of statements  
 An argument form is a series of statement forms
@@ -110,20 +106,59 @@ The symbol &there4; read "therefore" is placed before the conclusion
 | Division into cases | a &or; b<br>a &rarr; c<br>b &rarr; c<br>&there4;c                      |
 | Contradiction       | &not;a &rarr; **c**<br>&there4;a                                       |
 
-### is able to define predicates and their truth sets
+### have the skills to write programs based on predictive logic (1,2)
 
-### is able to explain the universal and existential quantifiers
+flueben
 
-### is able to present some arguments with qualified statements
+### knows Predicates and Quantifiers (2)
 
-### **is able to understand set properties and operations on sets**
+A predicate is a sentence that contains a finite number of variables and becomes a statement when specific values are substituted for all variables.
 
-### **is able to understand the properties of relations as the foundation of relational databases and static analysis**
+&forall; - universal quantifier: for all
+&exist; - Existential quantifier: there exists
 
-### **have the skills to write programs based on predictive logic**
+### _knows laws of multi-quantified statements including De Morgan’s law_ (2)
 
-### **have the skills to optimize code using rules of induction and recursion**
+&not;(&forall;x &in; D, &exist;y &in; E, P(x,y)) &equiv; &exist;x &in; D, &forall;y &in; E, &not;P(x,y)
 
-### **have the skills to use and implement regular expressions as finite-state automata to evaluate input**
+### _is able to define predicates and their truth sets_ (2)
 
-### **have the skills to implement static analysis on simple code**
+If P(x) is a predicate, and the domain of x is D. Then the truth set of P(x) is the set of all elements x &in; D where P(x) is true. { x &in; D | P(x) }
+
+### _is able to explain the universal and existential quantifiers_ (2)
+
+&forall; - universal quantifier: for all
+&exist; - Existential quantifier: there exists
+
+### _is able to present some arguments with quantified statements_ (2)
+
+&forall;x, P(x) &rarr; Q(x)
+P(a)
+&there4; Q(a)
+
+### knows Set notations and Set Theory (3)
+
+set notation: {1, 2, ..., 10}
+set builder notation: { x &in; D | P(x) }
+
+### is able to understand set properties and operations on sets (3)
+
+Inclusion of intersection: A &cap; B &sube; A
+Inclusion in union: A &sube; A &cup; B
+Transitivity of subsets: A &sube; B &and; B &sube; C &rarr; A &sube; C
+
+### knows Sequences and induction (4)
+
+### have the skills to optimize code using rules of induction and recursion (4)
+
+### knows Regular expressions and Finite-State Automata (5)
+
+### have the skills to use and implement regular expressions as finite-state automata to evaluate input (5)
+
+### knows Relations (6)
+
+### is able to understand the properties of relations as the foundation of relational databases and static analysis (6)
+
+### knows Static Analysis and Design by Contract (7)
+
+### have the skills to implement static analysis on simple code (7)
